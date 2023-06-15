@@ -1,0 +1,434 @@
+.birthday{
+    background-color:#3C486B;
+    color:white;
+    width: 100%;
+    height: 400px;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(50rem/16);
+    border: 5px dotted transparent;
+  animation: border-blink 1s linear infinite;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.kavithai{
+  position: relative;
+  background-color: #3C486B;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: calc(50rem/16);
+  color: white;
+  border: 5px dotted transparent;
+  animation: border-blink 1s linear infinite;
+  overflow: hidden;
+}
+
+
+
+
+
+.ribbon1{
+   width: 50%;
+   height: auto;
+   margin: auto;
+}
+
+@keyframes border-blink {
+    0%, 50% {
+      border-color: yellow;
+    }
+    25%, 75% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: yellow;
+    }
+  }
+
+.birthday-text{
+   transform: rotate(-30deg);
+   display: inline;
+   animation: text-blink 2s linear infinite;
+}
+
+@keyframes text-blink {
+    0%, 50% {
+        text-shadow: 0 0 10px yellow;
+      }
+      25%, 75% {
+        text-shadow: none;
+      }
+      100% {
+        text-shadow: 0 0 10px yellow;
+      }
+  }
+  .carousel-all{
+    
+    background-color: #F0F0F0;
+    margin:  auto;
+    /* font-size: calc(50rem/16); */
+    position: relative;
+}
+
+.d-block{
+  
+    padding: 10px;
+    background-color:#F45050;
+}
+
+
+
+.carousel-button{
+  background-color: #F45050;
+}
+.birthday-image{
+    width:5%;
+    height: auto;
+    position:absolute;
+    animation: floating 3s infinite alternate ease-in-out;
+    
+}
+
+.cardcarousel {
+  width:90%; /* Adjust the width of each card as per your requirement */
+  margin: 0 auto;
+  background-color:white; /* Set the background color for the cards */
+  height: 700px;
+  padding: 20px; 
+  box-sizing: border-box;
+  box-sizing: border-box;
+  perspective: 1000px; 
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  text-align: center;
+  font-size: calc(25rem/16); 
+  
+  
+  /* font-family: 'Pacifico', cursive; */
+}
+
+
+
+.cardcarousel.flipped {
+  transform: rotateY(180deg); 
+}
+
+
+.cardcarousel .carouselfront,
+.cardcarousel .carouselback {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+ 
+ 
+}
+
+.cardcarousel .carouselback {
+  transform: rotateY(180deg);
+  overflow: auto;
+  
+}
+
+/* .cardcarousel.flipped .carouselfront {
+  transform: rotateY(180deg);
+}
+
+.cardcarousel.flipped .caoruselback {
+  transform: rotateY(0deg);
+} */
+
+.imagecarousel{
+  width: 100%;
+  height: auto;
+}
+
+
+
+@keyframes floating {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(30deg);
+  }
+  50% {
+    transform: translate3d(0, 15px, 0) rotate(30deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(30deg);
+  }
+}
+.party-hat{
+  right:20%;
+  bottom:50%;
+ 
+
+}
+
+.cake{
+  left: 20%;
+  bottom:20%;
+  transform: rotate(0);
+}
+.fireworks{
+  left: 20%;
+  transform: rotate(-30deg);
+}
+
+.ribbon{
+  right: 20%;
+}
+.ice-cream{
+
+    left:10%;
+    bottom: 40%;
+    transform: rotate(30deg);
+}
+
+.ice-cream1{
+  left:20%;
+  bottom:70%;
+}
+
+.cake-slice{
+  right: 10%;
+  bottom:60%;
+  transform: rotate(30deg);
+}
+
+.cupcake{
+  bottom:10%;
+  right:10%;
+  transform: rotate(30deg);
+}
+
+@keyframes moveObject {
+  0%{
+    bottom:-50%;
+  }
+
+  25%{
+       bottom:30%;
+  }
+  50%{
+    bottom:100%;
+  }
+
+75%{
+  top:-50%;
+}
+
+0%{
+  bottom:-10%;
+}
+}
+   
+  
+  
+
+.photos{
+    width: 50%;
+    margin: auto;
+    padding: 5%;
+}
+
+
+
+.birthdayimg{
+  width: 7%;
+  height: auto;
+  position: absolute;
+}
+
+.first{
+  left:20%;
+  bottom: 0;
+  animation: balloonmove 10s linear infinite;
+
+}
+
+
+
+.second{
+  right:20%;
+  bottom:0%;
+  animation: balloonmove 6s linear infinite;
+}
+
+@keyframes balloonmove {
+  from{
+    bottom:0;
+  }
+
+  to{
+    bottom:100%;
+  }
+
+}
+
+.days{
+  background-color: #A459D1;
+  font-family: 'Pacifico', cursive;
+  
+  text-align: center;
+}
+
+.message-div{
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F0F0F0;
+  justify-content: center;
+  width: 100%;
+  
+ }
+
+
+
+.card {
+  width:20%; /* Adjust the width of each card as per your requirement */
+  margin: 5%; /* Adjust the margin between cards as per your requirement */
+  background-color:white; /* Set the background color for the cards */
+  height: 200px;
+  padding: 20px; 
+  box-sizing: border-box;
+  box-sizing: border-box;
+  perspective: 1000px; 
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  text-align: center;
+  font-size: calc(40rem/16); 
+  font-family: 'Pacifico', cursive;
+}
+
+.card:hover{
+  background-color: #F45050 ;
+  transform: scale(1.1);
+}
+
+.card.flipped {
+  transform: rotateY(180deg); /* Apply the flip effect */
+}
+
+
+.card .front,
+.card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+    top: 0;
+    left: 0;
+  backface-visibility: hidden; 
+}
+
+.card .back {
+  transform: rotateY(180deg);
+  font-size: calc(20rem/16); 
+  overflow: auto;
+}
+.finish{
+  background-color: #3C486B;
+  color: #F0F0F0;
+  height: 200px;
+  font-size: calc(25rem/16);
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+}
+
+@media (max-width:600px){
+    
+    .photos{
+        width:90%;
+        padding: 10%;
+    }
+    p{
+        font-size: calc(30rem/16);
+    }
+
+    .card{
+      width:45%;
+      margin:5%;
+      font-size: calc(25rem/16);
+      
+    }
+
+    .birthdayimg{
+      width:20%;
+    }
+    
+    .birthday-image{
+      width:10%;
+    }
+
+    .cake{
+      left: 10%;
+      bottom:20%;
+      transform: rotate(0);
+    }
+    .fireworks{
+      left: 5%;
+      transform: rotate(-30deg);
+    }
+    
+    .ribbon{
+      right: 5%;
+    }
+    .ice-cream{
+    
+        left:5%;
+        bottom: 40%;
+        transform: rotate(30deg);
+    }
+    
+    .ice-cream1{
+      left:5%;
+      bottom:70%;
+    }
+    
+    .cake-slice{
+      right: 5%;
+      bottom:60%;
+      transform: rotate(30deg);
+    }
+    
+    .cupcake{
+      bottom:5%;
+      right:10%;
+      transform: rotate(30deg);
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translate3d(0, 0, 0) rotate(30deg);
+      }
+      50% {
+        transform: translate3d(0, 5px, 0) rotate(30deg);
+      }
+      100% {
+        transform: translate3d(0, 0, 0) rotate(30deg);
+      }
+   
+      .kavithai{
+        font-size:calc(30rem/16)
+      }
+
+}
+.cardcarousel{
+  height:300px;
+  font-size: calc(10rem/16);
+}
+
+.finish{
+  font-size: calc(20rem/16);
+  overflow: auto;
+}
+}
+
