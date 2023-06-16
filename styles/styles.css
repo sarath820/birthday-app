@@ -55,6 +55,16 @@
    animation: text-blink 2s linear infinite;
 }
 
+.please{
+  font-size: calc(40rem/16);
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  animation: text-blink2 2s linear infinite;
+  color: white;
+  margin-top: 3%;
+  background-color: #F0F0F0;
+}
+
 @keyframes text-blink {
     0%, 50% {
         text-shadow: 0 0 10px yellow;
@@ -66,12 +76,27 @@
         text-shadow: 0 0 10px yellow;
       }
   }
+
+  @keyframes text-blink2 {
+    0%, 50% {
+        text-shadow: 0 0 10px red;
+      }
+      25%, 75% {
+        text-shadow: none;
+      }
+      100% {
+        text-shadow: 0 0 10px red;
+      }
+  }
+
+
   .carousel-all{
     
     background-color: #F0F0F0;
     margin:  auto;
     /* font-size: calc(50rem/16); */
     position: relative;
+    
 }
 
 .d-block{
@@ -92,6 +117,8 @@
     animation: floating 3s infinite alternate ease-in-out;
     
 }
+
+
 
 .cardcarousel {
   width:90%; /* Adjust the width of each card as per your requirement */
@@ -133,6 +160,8 @@
 .cardcarousel .carouselback {
   transform: rotateY(180deg);
   overflow: auto;
+  text-align: center;
+  
   
 }
 
@@ -289,9 +318,14 @@
   justify-content: center;
   width: 100%;
   
+  
  }
 
-
+.date{
+  font-size: calc(40rem/16); 
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+}
 
 .card {
   width:20%; /* Adjust the width of each card as per your requirement */
@@ -307,11 +341,13 @@
   text-align: center;
   font-size: calc(40rem/16); 
   font-family: 'Pacifico', cursive;
+  
 }
 
 .card:hover{
-  background-color: #F45050 ;
+  background-color: #3C486B ;
   transform: scale(1.1);
+  color: #F0F0F0;
 }
 
 .card.flipped {
@@ -424,6 +460,10 @@
 .cardcarousel{
   height:300px;
   font-size: calc(10rem/16);
+}
+
+.card .back{
+  font-size: calc(12rem/16) ;
 }
 
 .finish{
